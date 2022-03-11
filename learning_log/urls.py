@@ -14,24 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-"""Defines URL patterns for learning_logs."""
-
-from django.urls import path
-
-from . import views
-
-app_name = 'learning_logs'
-
-urlpatterns = [
-	# Home page
-	path('', views.index, name='index'),
-]
-
-'''
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('learning_logs.urls')),
-]'''
+]
+
+
+
+
